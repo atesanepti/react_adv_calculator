@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  @apply bg-slate-900 hover:bg-slate-950 hover:transition-all text-white lining-nums;
+}
+
+#calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
+}
+#calculator-grid > button {
+  border: 1px solid #fff;
+}
+#span-2 {
+  grid-column: span 2;
+}
+#display {
+  grid-column: 1/-1;
+  word-wrap: break-word;
+  word-break: break-all;
+}
